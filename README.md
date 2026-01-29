@@ -59,15 +59,11 @@ npm run dev
 
 返回：`application/vnd.openxmlformats-officedocument.presentationml.presentation`（文件下载）
 
-## 四、为开源做的最小整理（你代码里值得顺手改的点）
-
 - **统一导入路径**：原代码里有 `from write_one_slide import ...` 这种相对脚本导入，作为 package 使用时会失败；本仓库已做了最小修正。
 - **环境变量**：建议只保留一个 `.env.example`，运行时读 `.env`（或 `env_template.env`）。
 - **目录约定**：
   - 知识库索引放 `backend/kb_store/`
   - 图片缓存放 `backend/kb/images/`，并用 `images.json` 做索引
 - **可观测性**：可以把每个 Step 的产物（brief/outline/deck.json）落盘，方便排查。
-
-## License
 
 按你的需要补充。
