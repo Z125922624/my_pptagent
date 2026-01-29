@@ -1,6 +1,12 @@
 # ppt-agent（自动生成PPT）
 
 这是一个「PPT Agent」示例项目：基于用户一句话需求，依次完成 **需求解析 → 大纲规划 → RAG 检索 → LLM 写 DeckSpec → 渲染 PPTX**。
+<img width="2124" height="1198" alt="image" src="https://github.com/user-attachments/assets/9a45f4da-920b-4a23-be34-82f27b10d3a3" />
+<img width="2124" height="1190" alt="image" src="https://github.com/user-attachments/assets/d98019ab-3643-4449-b03c-ea21fdb2afd6" />
+<img width="2118" height="1180" alt="image" src="https://github.com/user-attachments/assets/3f013c56-19a1-4a50-80e6-f4f5aeebab98" />
+<img width="2118" height="1184" alt="image" src="https://github.com/user-attachments/assets/e7413b95-3185-40de-a0e5-4d3727ed3ed5" />
+
+
 
 本仓库包含：
 - `backend/`：Python 后端（FastAPI）+ 你的 ppt_agent 生成链路
@@ -12,6 +18,7 @@
 2. **Step2 大纲规划（OutlineItem 列表）**：生成每一页标题、要点与是否需要检索
 3. **Step3 RAG 检索（Evidence Packs）**：用 FAISS + Embedding 从知识库里拿到文本片段与候选图片
 4. **Step4 写 DeckSpec + 渲染**：并发生成每页的 blocks（cards/bullets/fact/example/image...），最后用 `python-pptx` 生成 `pptx`
+![Uploading image.png…]()
 
 ## 二、快速开始（本地运行）
 
